@@ -1,0 +1,30 @@
+{
+  "name": "truffle-kaleido-box",
+  "version": "0.1.0",
+  "description": "Boilerplate to get up and running quickly with Truffle on a Kaleido chain.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "web3": "^1.0.0-beta.37"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaleido-io/truffle-kaleido-box.git"
+  },
+  "keywords": [
+    "truffle",
+    "kaleido"
+  ],
+  "author": "Kaleido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaleido-io/truffle-kaleido-box/issues"
+  },
+  "homepage": "https://github.com/kaleido-io/truffle-kaleido-box#readme"
+}
