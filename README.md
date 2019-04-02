@@ -16,7 +16,7 @@ npx truffle unbox kaleido-io/truffle-kaleido-box
 
 ```
 npm install -g truffle
-truffle unbox truffle-kaleido
+truffle unbox kaleido-io/truffle-kaleido-box
 ```
 
 3. Run the development console. This will instantiate a local chain for you to test that Truffle is working properly.
