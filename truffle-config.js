@@ -13,7 +13,8 @@ module.exports = {
       },
       network_id: "*", // Match any network id
       gasPrice: 0,
-      gas: 4500000
+      gas: 4500000,
+      /* type: 'quorum' // Use this property for Quorum environments */
     },
   }
 };
