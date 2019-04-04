@@ -1,4 +1,6 @@
-# Truffle & Kaleido
+![Truffle & Kaleido](./box-img-sm.png "Truffle & Kaleido")
+
+# Truffle & Kaleido Truffle Box
 
 This box gives you a boilerplate to get up and running quickly with Truffle on a Kaleido chain.
 
