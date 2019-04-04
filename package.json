@@ -1,5 +1,5 @@
 {
-  "name": "truffle-kaleido-box",
+  "name": "@kaleido-io/truffle-kaleido-box",
   "version": "0.1.0",
   "description": "Boilerplate to get up and running quickly with Truffle on a Kaleido chain.",
   "main": "truffle-config.js",
