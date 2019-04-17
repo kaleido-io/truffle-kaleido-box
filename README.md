@@ -1,4 +1,4 @@
-![Truffle & Kaleido](./box-img-sm.png "Truffle & Kaleido")
+![Truffle & Kaleido](https://github.com/kaleido-io/truffle-kaleido-box/box-img-sm.png "Truffle & Kaleido")
 
 # Truffle & Kaleido Truffle Box
 
