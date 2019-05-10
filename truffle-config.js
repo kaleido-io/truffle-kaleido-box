@@ -1,5 +1,4 @@
 const HTTPProviderRateLimitRetry = require('./lib/http-provider-rate-limit-retry')
-var Web3 = require('web3');
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -16,5 +15,8 @@ module.exports = {
       gas: 4500000,
       /* type: 'quorum' // Use this property for Quorum environments */
     },
+  },
+  mocha: {
+    enableTimeouts: false
   }
 };
