@@ -1,4 +1,4 @@
-const path = require("path");
+const HTTPProviderRateLimitRetry = require('./lib/http-provider-rate-limit-retry')
 var Web3 = require('web3');
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
       provider: () => {
         const appCred = 'yourappcred'; // from application credential widget
         const connectionURL = 'nodeConnectionURL'; // without protocol (https://)
-        return new Web3.providers.HttpProvider(`https://${appCred}@${connectionURL}`, 100000);
+        return new HTTPProviderRateLimitRetry(`https://${appCred}@${connectionURL}`, 100000);
       },
       network_id: "*", // Match any network id
       gasPrice: 0,
