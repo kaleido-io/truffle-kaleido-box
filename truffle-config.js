@@ -1,5 +1,4 @@
-const path = require("path");
-var Web3 = require('web3');
+const HTTPProviderRateLimitRetry = require('./lib/http-provider-rate-limit-retry')
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -9,12 +8,15 @@ module.exports = {
       provider: () => {
         const appCred = 'yourappcred'; // from application credential widget
         const connectionURL = 'nodeConnectionURL'; // without protocol (https://)
-        return new Web3.providers.HttpProvider(`https://${appCred}@${connectionURL}`, 100000);
+        return new HTTPProviderRateLimitRetry(`https://${appCred}@${connectionURL}`, 100000);
       },
       network_id: "*", // Match any network id
       gasPrice: 0,
       gas: 4500000,
       /* type: 'quorum' // Use this property for Quorum environments */
     },
+  },
+  mocha: {
+    enableTimeouts: false
   }
 };
