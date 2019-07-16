@@ -17,11 +17,15 @@ module.exports = {
     },
   },
   mocha: {
-    enableTimeouts: false
+    enableTimeouts: false,
+    before_timeout: 600000
   },
   compilers: {
     solc: {
-      version: "0.5.0",
+      version: "0.5.8",
+      settings: {
+        evmVersion: "byzantium"
+      }
     },
   }
 };
